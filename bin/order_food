@@ -1,3 +1,11 @@
 require_relative '../config/environment'
 
-puts "running"
+puts "enter name"
+
+name = gets.strip
+
+foodie = Foodie.new(name)
+
+puts foodie.bank_account.balance
+
+display restaurants
