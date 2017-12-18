@@ -6,6 +6,7 @@ class FoodTruck
     @name = name
     @hours = hours
     @items = [] #"Cheeseburger $12"
+    @orders = []
     self.add_items(items) if !items.nil?
     FoodTruck.add_to_all(self)
   end
@@ -13,6 +14,8 @@ class FoodTruck
   def self.add_to_all(truck) #truck is instance of class
     if !@@all.include?(truck)
       @@all << truck
+    else
+      #whatever is here
     end
   end
 
