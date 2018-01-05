@@ -9,11 +9,13 @@ class BankAccount
   def initialize(owner)
     @owner = owner
     @balance = rand(0..100)
-    @@all << self if !@@all.include?(self)
+    @@all << self
   end
 
   def self.all
     @@all
   end
+
+  #make an add to account method
 
 end
